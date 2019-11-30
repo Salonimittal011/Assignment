@@ -1,0 +1,122 @@
+header {
+    // padding-top: 10px;
+    line-height: unset;
+    .nav-primary {
+        // padding-top: 10px;
+
+        ul {
+            margin: 0;
+            padding: 16px 0;
+            li {
+                display: inline;
+
+                a {
+                    text-decoration: none;
+                    list-style: none;
+                    color: $grey;
+                    padding-bottom: 18px;
+
+                    .material-icons {
+                        vertical-align: middle;
+                        font-size: 26px;
+                    }
+
+                    span {
+                        padding-left: 10px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        font-size: 15px;
+                    }
+
+                    &:hover {
+                        border-bottom: 2px solid $orange;
+                        transform: translateY(-10px);
+
+                        .material-icons {
+                            color: $orange;
+                            text-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+                            
+                        }
+
+                        span {
+                            color: $black;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .nav-secondary {
+        text-align: right;
+
+        .notifications {
+            padding-top: 10px;
+            display: inline-block;
+            position: relative;
+
+            .help-icon {
+                color: $grey;
+                margin-right: 16px;
+
+            }
+
+            .notification-icon {
+                color: $grey;
+                margin-right: 16px;
+
+                &:hover {
+                    color: $orange;
+                    cursor: pointer;
+                }
+
+            }
+
+            .pop-up {
+                display: none;
+                position: absolute;
+                width: 200px;
+                text-align: left;
+                padding: 10px;
+                border-radius: 10px;
+                color: white;
+                background: $grey;
+                z-index: 9999;
+            }
+        }
+
+        .user-profile {
+            display: inline-block;
+
+            .user-image {
+                display: inline-block;
+
+                img {
+                    height: 30px;
+                    width: auto;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+            }
+
+            .user-name {
+                color: $black;
+                vertical-align: super;
+                padding-left: 10px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-top: 6px solid $grey;
+                    position: absolute;
+                    right: -20px;
+                    bottom: 5px;
+                }
+
+            }
+        }
+    }
+}

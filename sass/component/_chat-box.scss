@@ -1,0 +1,132 @@
+.chat-box {
+    &-head {
+        padding-top: 10px;
+
+        ul {
+            margin: 0;
+
+            li {
+                display: inline;
+                padding-left: 30px;
+
+                a {
+                    list-style: none;
+                    text-decoration: none;
+                    color: $grey;
+                    font-size: 12px;
+                    padding-bottom: 8px;
+                    font-weight: 600;
+
+                    i {
+                        padding-right: 5px;
+                        vertical-align: middle;
+                    }
+
+                    &:hover {
+                        color: $black;
+                        border-bottom: 2px solid $orange;
+
+                        i {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+
+            &:after {
+                content: "";
+                border-top: 5px solid transparent;
+                border-left: 5px solid #fdf6f5;
+                border-right: 5px solid transparent;
+                position: absolute;
+                bottom: 0;
+                left: -10px;
+            }
+        }
+    }
+}
+
+.bottom-keyboard {
+    position: relative;
+    padding-top: 12px;
+    border-top: 2px solid $light-grey;
+
+    .fixed-action-btn {
+        position: unset;
+        padding: 0;
+
+        .plus {
+            i {
+                transition: all 0.5s;
+                &.rotate {
+                    transform: rotate(45deg);
+                    transition: all 0.5s;
+                }
+            }
+        }
+        ul {
+            width: 540px;
+            top: -55px !important;
+            left: 2%;
+            border: 2px solid $light-grey;
+            border-radius: 9px;
+            display: none;
+            visibility: unset;
+            transition: all 0.5s;
+            text-align: left;
+            padding: 7px 10px;
+
+            li {
+                display: inline-block;
+                padding: 5px 12px;
+                margin-bottom: 0;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $light-pink;
+                    color: $orange;
+
+                    i {
+                        color: $orange;
+
+                    }
+                }
+
+                i {
+                    vertical-align: bottom;
+                    color: $grey;
+                    padding-right: 5px;
+                }
+            }
+        }
+
+    }
+
+    .btn-floating {
+        background-color: $orange;
+    }
+
+    input {
+        outline: none;
+        border: none !important;
+
+        &:focus {
+            box-shadow: 0 1px 0 0 $orange !important;
+        }
+    }
+
+    .send {
+        font-size: 13px;
+        background-color: $orange;
+
+        i {
+            font-size: 13px;
+        }
+
+        &:hover {
+            color: $orange;
+            background-color: $white;
+        }
+    }
+}

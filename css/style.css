@@ -1,0 +1,455 @@
+@font-face {
+  font-family: 'Open-Sans-Regular';
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* line 1, ../sass/base/_common.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 4, ../sass/base/_common.scss */
+body {
+  font-family: Open-Sans-Regular; }
+
+/* line 7, ../sass/base/_common.scss */
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: unset; }
+
+/* line 12, ../sass/base/_common.scss */
+.article {
+  padding-top: 30px;
+  background: #f8f8f8; }
+
+/* line 21, ../sass/base/_common.scss */
+.mb-0 {
+  margin-bottom: 0; }
+/* line 26, ../sass/base/_common.scss */
+.mt-0 {
+  margin-top: 0; }
+/* line 31, ../sass/base/_common.scss */
+.ml-0 {
+  margin-left: 0; }
+/* line 36, ../sass/base/_common.scss */
+.mr-0 {
+  margin-right: 0; }
+
+/* line 41, ../sass/base/_common.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+/* line 45, ../sass/base/_common.scss */
+.text-right {
+  text-align: right;
+  color: #949494; }
+
+/* line 49, ../sass/base/_common.scss */
+.row {
+  margin-bottom: 0 !important; }
+
+/* line 2, ../sass/component/_images.scss */
+.logo-img img {
+  height: 50px;
+  width: auto; }
+
+/* line 7, ../sass/component/_images.scss */
+.footer-logo {
+  text-align: center;
+  padding: 12px; }
+  /* line 10, ../sass/component/_images.scss */
+  .footer-logo img {
+    filter: grayscale(1);
+    height: 50px;
+    width: auto; }
+
+/* line 1, ../sass/component/_header.scss */
+header {
+  line-height: unset; }
+  /* line 7, ../sass/component/_header.scss */
+  header .nav-primary ul {
+    margin: 0;
+    padding: 16px 0; }
+    /* line 10, ../sass/component/_header.scss */
+    header .nav-primary ul li {
+      display: inline; }
+      /* line 13, ../sass/component/_header.scss */
+      header .nav-primary ul li a {
+        text-decoration: none;
+        list-style: none;
+        color: #949494;
+        padding-bottom: 18px; }
+        /* line 19, ../sass/component/_header.scss */
+        header .nav-primary ul li a .material-icons {
+          vertical-align: middle;
+          font-size: 26px; }
+        /* line 24, ../sass/component/_header.scss */
+        header .nav-primary ul li a span {
+          padding-left: 10px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          font-size: 15px; }
+        /* line 31, ../sass/component/_header.scss */
+        header .nav-primary ul li a:hover {
+          border-bottom: 2px solid #e7877d;
+          transform: translateY(-10px); }
+          /* line 35, ../sass/component/_header.scss */
+          header .nav-primary ul li a:hover .material-icons {
+            color: #e7877d;
+            text-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1); }
+          /* line 41, ../sass/component/_header.scss */
+          header .nav-primary ul li a:hover span {
+            color: #000000; }
+  /* line 51, ../sass/component/_header.scss */
+  header .nav-secondary {
+    text-align: right; }
+    /* line 54, ../sass/component/_header.scss */
+    header .nav-secondary .notifications {
+      padding-top: 10px;
+      display: inline-block;
+      position: relative; }
+      /* line 59, ../sass/component/_header.scss */
+      header .nav-secondary .notifications .help-icon {
+        color: #949494;
+        margin-right: 16px; }
+      /* line 65, ../sass/component/_header.scss */
+      header .nav-secondary .notifications .notification-icon {
+        color: #949494;
+        margin-right: 16px; }
+        /* line 69, ../sass/component/_header.scss */
+        header .nav-secondary .notifications .notification-icon:hover {
+          color: #e7877d;
+          cursor: pointer; }
+      /* line 76, ../sass/component/_header.scss */
+      header .nav-secondary .notifications .pop-up {
+        display: none;
+        position: absolute;
+        width: 200px;
+        text-align: left;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        background: #949494;
+        z-index: 9999; }
+    /* line 89, ../sass/component/_header.scss */
+    header .nav-secondary .user-profile {
+      display: inline-block; }
+      /* line 92, ../sass/component/_header.scss */
+      header .nav-secondary .user-profile .user-image {
+        display: inline-block; }
+        /* line 95, ../sass/component/_header.scss */
+        header .nav-secondary .user-profile .user-image img {
+          height: 30px;
+          width: auto;
+          border-radius: 50%;
+          display: inline-block; }
+      /* line 103, ../sass/component/_header.scss */
+      header .nav-secondary .user-profile .user-name {
+        color: #000000;
+        vertical-align: super;
+        padding-left: 10px;
+        position: relative; }
+        /* line 109, ../sass/component/_header.scss */
+        header .nav-secondary .user-profile .user-name::after {
+          content: "";
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 6px solid #949494;
+          position: absolute;
+          right: -20px;
+          bottom: 5px; }
+
+/* line 1, ../sass/component/_article-left.scss */
+.article-left {
+  padding-bottom: 50px; }
+  /* line 4, ../sass/component/_article-left.scss */
+  .article-left .user-image {
+    text-align: center; }
+    /* line 7, ../sass/component/_article-left.scss */
+    .article-left .user-image img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%; }
+  /* line 14, ../sass/component/_article-left.scss */
+  .article-left .user-name {
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    margin: 6px 0; }
+  /* line 22, ../sass/component/_article-left.scss */
+  .article-left p {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+    color: #949494; }
+  /* line 31, ../sass/component/_article-left.scss */
+  .article-left .button .btn {
+    text-transform: none;
+    color: #ffffff;
+    background: #e7877d;
+    width: 100%;
+    transition: 1s; }
+    /* line 38, ../sass/component/_article-left.scss */
+    .article-left .button .btn:hover {
+      color: #e7877d;
+      background: #ffffff;
+      transition: 0.8s; }
+  /* line 45, ../sass/component/_article-left.scss */
+  .article-left .button .material-icons {
+    vertical-align: bottom;
+    padding-right: 6px; }
+  /* line 50, ../sass/component/_article-left.scss */
+  .article-left .button span {
+    display: block;
+    padding-left: 24px;
+    margin: 14px;
+    color: #949494;
+    cursor: pointer; }
+    /* line 58, ../sass/component/_article-left.scss */
+    .article-left .button span:hover {
+      color: #e7877d; }
+
+/* line 2, ../sass/component/_article-right.scss */
+.article-right {
+  padding-left: 6% !important; }
+  /* line 6, ../sass/component/_article-right.scss */
+  .article-right-head i {
+    color: #e7877d;
+    vertical-align: bottom;
+    font-size: 26px; }
+  /* line 12, ../sass/component/_article-right.scss */
+  .article-right-head span {
+    padding-left: 8px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px; }
+  /* line 21, ../sass/component/_article-right.scss */
+  .article-right .zoom {
+    color: #949494; }
+  /* line 25, ../sass/component/_article-right.scss */
+  .article-right-inner {
+    margin-bottom: 15px; }
+/* line 30, ../sass/component/_article-right.scss */
+.article-inner {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1); }
+  /* line 35, ../sass/component/_article-right.scss */
+  .article-inner-left {
+    border-right: 2px solid #f8f8f8; }
+    /* line 40, ../sass/component/_article-right.scss */
+    .article-inner-left .left-head {
+      border-bottom: 2px solid #f8f8f8;
+      padding: 12px 5px !important; }
+      /* line 44, ../sass/component/_article-right.scss */
+      .article-inner-left .left-head h4 {
+        font-size: 17px;
+        font-weight: 500; }
+    /* line 53, ../sass/component/_article-right.scss */
+    .article-inner-left .chat-list .display-picture {
+      text-align: center;
+      padding-top: 10px; }
+      /* line 57, ../sass/component/_article-right.scss */
+      .article-inner-left .chat-list .display-picture img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%; }
+    /* line 64, ../sass/component/_article-right.scss */
+    .article-inner-left .chat-list h6 {
+      font-weight: bold;
+      color: #000000;
+      line-height: 2;
+      font-size: 16px;
+      padding-top: 10px;
+      transition: all 0.5s; }
+    /* line 73, ../sass/component/_article-right.scss */
+    .article-inner-left .chat-list p {
+      margin: 0;
+      font-size: 11px;
+      color: #949494;
+      font-weight: bold; }
+      /* line 79, ../sass/component/_article-right.scss */
+      .article-inner-left .chat-list p .fa-grin-beam {
+        color: #e7877d;
+        padding-left: 4px; }
+      /* line 84, ../sass/component/_article-right.scss */
+      .article-inner-left .chat-list p .material-icons {
+        color: #000000;
+        vertical-align: bottom;
+        padding-left: 2px; }
+    /* line 91, ../sass/component/_article-right.scss */
+    .article-inner-left .chat-list .timer {
+      border-bottom: 2px solid #f8f8f8;
+      padding-bottom: 8px;
+      padding-left: 0;
+      padding-right: 0; }
+      /* line 97, ../sass/component/_article-right.scss */
+      .article-inner-left .chat-list .timer:not(:last-child):after {
+        border-bottom: 2px solid #f8f8f8; }
+      /* line 101, ../sass/component/_article-right.scss */
+      .article-inner-left .chat-list .timer span {
+        font-size: 10px;
+        color: #949494; }
+        /* line 105, ../sass/component/_article-right.scss */
+        .article-inner-left .chat-list .timer span .material-icons {
+          vertical-align: middle;
+          color: #70b37c; }
+        /* line 110, ../sass/component/_article-right.scss */
+        .article-inner-left .chat-list .timer span .equalizer {
+          vertical-align: text-bottom;
+          color: #7a70b3; }
+    /* line 118, ../sass/component/_article-right.scss */
+    .article-inner-left .chat-list-item {
+      transition: all 0.5s; }
+      /* line 121, ../sass/component/_article-right.scss */
+      .article-inner-left .chat-list-item:hover {
+        background-color: #fdf6f5;
+        transition: all 0.5s; }
+        /* line 125, ../sass/component/_article-right.scss */
+        .article-inner-left .chat-list-item:hover h6 {
+          color: #e7877d;
+          transition: all 0.5s; }
+        /* line 130, ../sass/component/_article-right.scss */
+        .article-inner-left .chat-list-item:hover .timer {
+          border-bottom: 2px solid #e7877d; }
+          /* line 133, ../sass/component/_article-right.scss */
+          .article-inner-left .chat-list-item:hover .timer:not(:last-child):after {
+            border-bottom: 2px solid #e7877d; }
+  /* line 145, ../sass/component/_article-right.scss */
+  .article-inner-chat {
+    position: relative; }
+    /* line 148, ../sass/component/_article-right.scss */
+    .article-inner-chat .msg-area {
+      height: 420px; }
+      /* line 151, ../sass/component/_article-right.scss */
+      .article-inner-chat .msg-area .msg {
+        top: 9%;
+        width: 260px;
+        padding: 10px 20px;
+        color: #e7877d;
+        background: #fdf6f5;
+        font-size: 12px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        border-radius: 10px 10px 0 10px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        position: relative;
+        margin-left: auto; }
+    /* line 168, ../sass/component/_article-right.scss */
+    .article-inner-chat .replies-heading {
+      border-bottom: 2px solid #f8f8f8;
+      padding: 7px 0; }
+
+/* line 2, ../sass/component/_chat-box.scss */
+.chat-box-head {
+  padding-top: 10px; }
+  /* line 5, ../sass/component/_chat-box.scss */
+  .chat-box-head ul {
+    margin: 0; }
+    /* line 8, ../sass/component/_chat-box.scss */
+    .chat-box-head ul li {
+      display: inline;
+      padding-left: 30px; }
+      /* line 12, ../sass/component/_chat-box.scss */
+      .chat-box-head ul li a {
+        list-style: none;
+        text-decoration: none;
+        color: #949494;
+        font-size: 12px;
+        padding-bottom: 8px;
+        font-weight: 600; }
+        /* line 20, ../sass/component/_chat-box.scss */
+        .chat-box-head ul li a i {
+          padding-right: 5px;
+          vertical-align: middle; }
+        /* line 25, ../sass/component/_chat-box.scss */
+        .chat-box-head ul li a:hover {
+          color: #000000;
+          border-bottom: 2px solid #e7877d; }
+          /* line 29, ../sass/component/_chat-box.scss */
+          .chat-box-head ul li a:hover i {
+            color: #e7877d; }
+    /* line 36, ../sass/component/_chat-box.scss */
+    .chat-box-head ul:after {
+      content: "";
+      border-top: 5px solid transparent;
+      border-left: 5px solid #fdf6f5;
+      border-right: 5px solid transparent;
+      position: absolute;
+      bottom: 0;
+      left: -10px; }
+
+/* line 49, ../sass/component/_chat-box.scss */
+.bottom-keyboard {
+  position: relative;
+  padding-top: 12px;
+  border-top: 2px solid #f8f8f8; }
+  /* line 54, ../sass/component/_chat-box.scss */
+  .bottom-keyboard .fixed-action-btn {
+    position: unset;
+    padding: 0; }
+    /* line 59, ../sass/component/_chat-box.scss */
+    .bottom-keyboard .fixed-action-btn .plus i {
+      transition: all 0.5s; }
+      /* line 61, ../sass/component/_chat-box.scss */
+      .bottom-keyboard .fixed-action-btn .plus i.rotate {
+        transform: rotate(45deg);
+        transition: all 0.5s; }
+    /* line 67, ../sass/component/_chat-box.scss */
+    .bottom-keyboard .fixed-action-btn ul {
+      width: 540px;
+      top: -55px !important;
+      left: 2%;
+      border: 2px solid #f8f8f8;
+      border-radius: 9px;
+      display: none;
+      visibility: unset;
+      transition: all 0.5s;
+      text-align: left;
+      padding: 7px 10px; }
+      /* line 79, ../sass/component/_chat-box.scss */
+      .bottom-keyboard .fixed-action-btn ul li {
+        display: inline-block;
+        padding: 5px 12px;
+        margin-bottom: 0;
+        border-radius: 5px;
+        cursor: pointer; }
+        /* line 86, ../sass/component/_chat-box.scss */
+        .bottom-keyboard .fixed-action-btn ul li:hover {
+          background-color: #fdf6f5;
+          color: #e7877d; }
+          /* line 90, ../sass/component/_chat-box.scss */
+          .bottom-keyboard .fixed-action-btn ul li:hover i {
+            color: #e7877d; }
+        /* line 96, ../sass/component/_chat-box.scss */
+        .bottom-keyboard .fixed-action-btn ul li i {
+          vertical-align: bottom;
+          color: #949494;
+          padding-right: 5px; }
+  /* line 106, ../sass/component/_chat-box.scss */
+  .bottom-keyboard .btn-floating {
+    background-color: #e7877d; }
+  /* line 110, ../sass/component/_chat-box.scss */
+  .bottom-keyboard input {
+    outline: none;
+    border: none !important; }
+    /* line 114, ../sass/component/_chat-box.scss */
+    .bottom-keyboard input:focus {
+      box-shadow: 0 1px 0 0 #e7877d !important; }
+  /* line 119, ../sass/component/_chat-box.scss */
+  .bottom-keyboard .send {
+    font-size: 13px;
+    background-color: #e7877d; }
+    /* line 123, ../sass/component/_chat-box.scss */
+    .bottom-keyboard .send i {
+      font-size: 13px; }
+    /* line 127, ../sass/component/_chat-box.scss */
+    .bottom-keyboard .send:hover {
+      color: #e7877d;
+      background-color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
